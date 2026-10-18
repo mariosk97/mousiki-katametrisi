@@ -1,0 +1,237 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #edf4ff;
+    color: #26334a;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+h1 {
+    font-size: 34px;
+    color: #254d83;
+}
+
+header p {
+    font-size: 19px;
+}
+
+.panel {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 4px 15px #00000012;
+    text-align: center;
+}
+
+.hidden {
+    display: none !important;
+}
+
+h2 {
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+button {
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    padding: 14px 20px;
+    transition: transform 0.1s;
+}
+
+button:hover {
+    transform: scale(1.02);
+}
+
+button:focus-visible,
+input:focus-visible {
+    outline: 4px solid #ffbf47;
+    outline-offset: 3px;
+}
+
+.mode-button {
+    display: block;
+    width: 100%;
+    margin: 12px 0;
+    background: #dceaff;
+    color: #254d83;
+    min-height: 65px;
+}
+
+.levels {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.levels button {
+    background: #f0f2f6;
+    color: #34445c;
+    min-height: 80px;
+}
+
+.levels button.selected {
+    background: #2868b2;
+    color: white;
+}
+
+.levels small {
+    font-size: 14px;
+}
+
+#menuMessage {
+    font-size: 17px;
+    min-height: 24px;
+}
+
+.game-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.back-button {
+    background: #e7edf5;
+    color: #34445c;
+    font-size: 16px;
+}
+
+#roundInfo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#instruction {
+    font-size: 20px;
+}
+
+.instrument-area {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+    margin: 25px auto;
+    max-width: 800px;
+}
+
+.instrument-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 145px;
+    padding: 12px;
+    background: #f2f6fc;
+    border: 2px solid #e0e8f4;
+    border-radius: 16px;
+}
+
+.instrument-card img {
+    display: block;
+    width: 100%;
+    height: 120px;
+    object-fit: contain;
+}
+
+.answer-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.answer-area label {
+    width: 100%;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+#answer {
+    width: 100px;
+    height: 70px;
+    font-size: 35px;
+    text-align: center;
+    border: 3px solid #b8cbe5;
+    border-radius: 12px;
+}
+
+#submitButton {
+    background: #2868b2;
+    color: white;
+    min-height: 65px;
+}
+
+#feedback {
+    font-size: 20px;
+    font-weight: bold;
+    min-height: 30px;
+}
+
+#feedback.correct {
+    color: #197541;
+}
+
+#feedback.wrong {
+    color: #b33131;
+}
+
+.next-button {
+    background: #23834c;
+    color: white;
+    min-height: 60px;
+    margin: 10px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .panel {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    .levels {
+        grid-template-columns: 1fr;
+    }
+
+    .instrument-area {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    .instrument-card {
+        min-height: 105px;
+    }
+
+    .instrument-card img {
+        height: 90px;
+    }
+}
