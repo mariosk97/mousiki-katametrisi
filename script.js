@@ -36,6 +36,13 @@ const musicFiles = [
 	"music/9.mp3",
 	"music/10.mp3",
 	"music/11.mp3",
+	"music/12.mp3",
+	"music/13.mp3",
+	"music/14.mp3",
+	"music/15.mp3",
+	"music/16.mp3",
+	"music/17.mp3",
+	"music/18.mp3",
 ];
 
 let selectedLevel = 1;
